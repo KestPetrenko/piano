@@ -125,7 +125,6 @@ document.addEventListener("keydown", function (e) {
         case ";":
             audioZ.play();
             textNota.textContent = '';
-            z.classList.add("playing");
             textNota.append(z.textContent);
             break;
     }
