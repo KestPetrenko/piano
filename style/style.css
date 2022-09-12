@@ -192,9 +192,3 @@ span:hover {
     font-size: 9vw;
     margin-bottom: 1%;
 }
-
-.playing {
-    transform: scale(.95);
-    border-color: #028ae9;
-    box-shadow: 0 0 1rem #028ae9;
-}
