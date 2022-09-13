@@ -129,3 +129,65 @@ document.addEventListener("keydown", function (e) {
             break;
     }
 });
+
+let fileManager = {
+    A() {
+        audioA.play();
+    },
+    W() {
+        audioW.play();
+    },
+    S() {
+        audioS.play();
+    },
+    E() {
+        audioE.play();
+    },
+    D() {
+        audioD.play();
+    },
+    F() {
+        audioF.play();
+    },
+    T() {
+        audioT.play();
+    },
+    G() {
+        audioG.play();
+    },
+    Y() {
+        audioY.play();
+    },
+    H() {
+        audioH.play();
+    },
+    U() {
+        audioU.play();
+    },
+    J() {
+        audioJ.play();
+    },
+    K() {
+        audioK.play();
+    },
+    O() {
+        audioO.play();
+    },
+    L() {
+        audioL.play();
+    },
+    P() {
+        audioP.play();
+    },
+    Z() {
+        audioZ.play();
+    },
+};
+
+document.querySelector(".container").addEventListener("click", function (e) {
+    const action = e.target.dataset.action;
+    if (action) {
+        // находим метод с именем, как в атрибуте data-action и вызываем его
+        fileManager[action]();
+    }
+});
